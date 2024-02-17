@@ -31,3 +31,24 @@
   --clr-primary-400: hsl(213, 96%, 18%); /* marine blue */
   --clr-primary-600: hsl(354, 84%, 57%); /* strawberry red */
 }
+
+/* CSS RESET */
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* BODY/GLOBAL STYLES */
