@@ -139,6 +139,89 @@
           </div>
         </div>
         <!-- Step 3-->
+        <div class="steps step--3">
+          <div class="steps__header">
+            <h2 class="steps__title">Pick add-ons</h2>
+            <p class="steps__info">
+              Add-ons help enhance your gaming experience
+            </p>
+          </div>
+          <form>
+            <div class="steps__box" data-id="1">
+              <input type="checkbox" id="online" />
+              <div class="step__description">
+                <label for="online">Online service</label>
+                <small>Access to multiplayer games</small>
+              </div>
+              <p class="step--price">+1/month</p>
+            </div>
+
+            <div class="steps__box" data-id="2">
+              <input type="checkbox" id="larger" />
+              <div class="step__description">
+                <label for="online">Larger storgae</label>
+                <small>Extra 1TB of cloud save </small>
+              </div>
+              <p class="step--price">+2/month</p>
+            </div>
+
+            <div class="steps__box" data-id="3">
+              <input type="checkbox" id="profile" />
+              <div class="step__description">
+                <label for="online">Customizable Profile</label>
+                <small>Custom theme for your profile</small>
+              </div>
+              <p class="step--price">+2/month</p>
+            </div>
+          </form>
+          <div class="buttons">
+            <button class="step--previous" type="button">Go Back</button>
+            <button class="step--next" type="button">Next Step</button>
+          </div>
+        </div>
+        <!-- Step 4 -->
+        <div class="steps step--4">
+          <header class="steps__header">
+            <h2 class="steps__title">Finishing Up</h2>
+            <p class="steps__info">
+              Double-check everything looks OK before continuing
+            </p>
+          </header>
+          <div class="step__selection--box">
+            <div class="step__selection--wrapper">
+              <div class="selection__plan">
+                <p class="selection__plan--name">Arcade (monthly)</p>
+                <p class="selection__plan--price">$9/month</p>
+              </div>
+              <hr />
+              <div class="selection__addons">
+                <template>
+                  <div class="selected__addon">
+                    <span class="selected__addon--name">Online Service</span>
+                    <span class="selected__addon--price">+1/month</span>
+                  </div>
+                </template>
+              </div>
+            </div>
+            <p class="selection__total">Total (per month) <b>+12/month</b></p>
+          </div>
+          <div class="buttons">
+            <button class="step--previous" type="button">Go Back</button>
+            <button class="step--next" type="button">Next Step</button>
+          </div>
+        </div>
+        <!-- Step 5 -->
+        <div class="steps step--5">
+          <img src="./assets/images/icon-thank-you.svg" alt="" />
+          <header class="steps__header">
+            <h2 class="steps__header">Thank you!</h2>
+            <p class="steps__info">
+              Thanks for confirming your subscription! We hope you have fun
+              using our platform. If you ever need support, please feel free to
+              email us at support@loremgaming.com.
+            </p>
+          </header>
+        </div>
       </div>
     </section>
     <script src="./assets/script.js"></script>
