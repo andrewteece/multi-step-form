@@ -24,6 +24,7 @@
   --clr-neutral-300: hsl(217, 100%, 97%); /* magnolia */
   --clr-neutral-400: hsl(229, 24%, 87%); /* light gray */
   --clr-neutral-500: hsl(231, 11%, 63%); /* cool gray */
+  --clr-neutral-800: hsl(0, 0%, 0%); /* black */
 
   --clr-primary-100: hsl(206, 94%, 87%); /* light blue */
   --clr-primary-200: hsl(228, 100%, 84%); /* pastel blue */
@@ -56,6 +57,17 @@ svg {
 body {
   font-family: var(--ff-primary);
   font-size: var(--fs-base);
+  background-color: var(--clr-neutral-300);
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form__wrapper {
+  max-width: 1100px;
+  display: flex;
+  padding: 1rem;
 }
 
 /* UTILITY */
@@ -68,4 +80,126 @@ body {
   position: absolute;
   white-space: nowrap;
   width: 1px;
+}
+.hidden {
+  display: none;
+}
+
+/* FORM */
+
+.form {
+  background-color: var(--clr-neutral-100);
+  border-radius: 1rem;
+  box-shadow: 0px 25px 40px -20px rgba(0, 0, 0, 0.1);
+}
+
+.form__sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 25rem;
+  min-height: 36rem;
+  padding: 3rem 2rem;
+  background-image: url('/assets/images/bg-sidebar-desktop.svg');
+  background-repeat: no-repeat;
+}
+
+/* STEP STYLES */
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.step--content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.step--content span {
+  font-size: var(--fs-xxsm);
+  color: var(--clr-neutral-400);
+  text-transform: uppercase;
+}
+
+.step--content b {
+  font-size: var(--fs-xsm);
+  font-weight: var(--fw-bold);
+  letter-spacing: 1px;
+  color: var(--clr-neutral-100);
+  text-transform: uppercase;
+}
+
+.step--circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  color: var(--clr-neutral-100);
+  font-weight: var(--fw-bold);
+  border: 2px solid var(--clr-neutral-100);
+  border-radius: 50%;
+}
+
+.active .step--circle {
+  background-color: var(--clr-primary-100);
+  color: var(--clr-primary-400);
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* STEP--1 */
+
+.step--1 {
+  display: flex;
+  width: 90%;
+}
+
+.step--1 form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  flex: 1;
+}
+
+/* STEP--2 */
+
+.step--2 {
+  display: none;
+  width: 90%;
+}
+
+/* STEP--3 */
+
+.step--3 {
+  display: none;
+  width: 90%;
+}
+
+/* STEP--4 */
+
+.step--4 {
+  display: none;
+  width: 90%;
+}
+
+/* STEP--5 */
+
+.step--5 {
+  display: none;
+  width: 90%;
+}
+
+/* COMPONENTS */
+
+.error {
+  border: 2px solid var(--clr-primary-600);
 }
